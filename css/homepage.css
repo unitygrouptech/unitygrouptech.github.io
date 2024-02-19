@@ -1,0 +1,25 @@
+.page-content {
+  padding-top: 75px;
+}
+
+.section-banner .section-title {
+  font-size: 150px;
+}
+
+.section-banner .container {
+  height: calc(100vh - 75px);
+  align-content: center;
+  text-transform: uppercase;
+}
+
+.section-banner .scroll-down-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+}
+
+.section-banner .scroll-down-wrapper .icon-scroll-down svg {
+  height: 50px;
+  width: 50px;
+}

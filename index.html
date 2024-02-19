@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unity Digital Development</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container w-90 mg-side-auto d-flex">
+        <div class="col-left">
+          <a href="" class="brand-logo">
+            <div class="image-wrapper">
+              <img src="/img/unity-dev-black.png" alt="Unity Digital Development" />
+            </div>
+          </a>
+        </div>
+        <div class="col-right">
+          <div class="menu-icon d-flex position-relative">
+            <div class="menu-button">Menu</div>
+            <div class="breadcrumbs d-grid position-relative">
+              <div class="menu-line line-1"></div>
+              <div class="menu-line line-2"></div>
+              <div class="menu-line line-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu-wrapper">
+        <div class="container d-grid">
+          <a href="" class="mega-menu-item">Home</a>
+          <a href="" class="mega-menu-item">About</a>
+          <a href="" class="mega-menu-item">Services</a>
+          <a href="" class="mega-menu-item">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- Page content -->
+    <section class="page-content position-relative">
+      <div class="section-1 section section-banner">
+        <div class="container max-w-1200 mg-side-auto d-grid position-relative">
+          <h2 class="section-title">
+            <span class="title-line-1">Shaping Futures,</span>
+            <span class="title-line-2">Crafting Unity.</span>
+          </h2>
+          <div class="scroll-down-wrapper">
+            <i data-feather="chevrons-down" class="icon-scroll-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section-2 section">
+        <div class="container">
+          <h3 class="section-title">Section 2</h3>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    feather.replace();
+    $('.menu-icon').click(function () {
+      $('.breadcrumbs').toggleClass('active');
+      $('.mega-menu-wrapper').toggleClass('active');
+      //   $('.main-header').toggleClass('active');
+    });
+  </script>
+</html>

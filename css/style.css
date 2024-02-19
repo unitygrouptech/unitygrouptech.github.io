@@ -1,0 +1,9 @@
+@import 'global.css';
+@import 'responsive.css';
+@import 'header.css';
+@import 'homepage.css';
+@import 'clash-font.css';
+
+.page {
+  margin: 0 !important;
+}

@@ -1,0 +1,119 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--color-white);
+  z-index: 999;
+}
+
+/* .main-header.active {
+  position: fixed !important;
+} */
+
+.main-header .container {
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .brand-logo .image-wrapper {
+  /* height: 80px; */
+  width: 130px;
+}
+
+.main-header .brand-logo .image-wrapper img {
+  object-fit: contain;
+}
+
+/* Main Menu Style */
+.main-header .menu-icon {
+  gap: 10px;
+  cursor: pointer;
+}
+
+.main-header .menu-icon .menu-button {
+  font-size: 17px;
+}
+
+.main-header .breadcrumbs {
+  width: 20px;
+  z-index: 50;
+}
+
+.main-header .breadcrumbs .menu-line {
+  width: 20px;
+  height: 2px;
+  background: var(--color-black);
+  position: absolute;
+}
+
+.main-header .breadcrumbs.active .menu-line-1 {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  animation-delay: 5s;
+}
+
+.main-header .breadcrumbs .menu-line.line-2 {
+  top: 6px;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.main-header .breadcrumbs .menu-line.line-3 {
+  top: 12px;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.main-header .breadcrumbs.active .menu-line.line-2 {
+  transform: rotate(45deg);
+  top: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-header .breadcrumbs.active .menu-line.line-1 {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.main-header .breadcrumbs.active .menu-line.line-3 {
+  transform: rotate(-45deg);
+  top: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.mega-menu-wrapper {
+  background-color: var(--color-white);
+}
+
+.mega-menu-wrapper .container {
+  min-height: 0px;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.8s ease;
+}
+
+.mega-menu-wrapper.active .container {
+  height: calc(100vh - 75px);
+  transition: all 0.5s ease-in-out;
+  min-height: 100px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s ease;
+}
+
+.mega-menu-wrapper .container {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mega-menu-wrapper .container .mega-menu-item {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 900;
+}
