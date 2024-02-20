@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
   font-size: 14px;
   margin-top: 0px !important;
-  font-family: 'ClashGrotesk-Medium';
+  font-family: 'ClashGrotesk-Regular';
 }
 
 body {
@@ -474,6 +474,10 @@ a {
 
 .d-flex {
   display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
 }
 
 .grid-flow-column {
