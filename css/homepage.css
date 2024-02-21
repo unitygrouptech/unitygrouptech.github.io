@@ -119,3 +119,234 @@
 .section-our-services .col-right .image-wrapper img {
   object-position: 25%;
 }
+
+/* Section 4 - Fun Facts */
+.section-fun-facts .container {
+  padding: 100px 0px;
+  width: 600px;
+}
+
+.section-fun-facts .section-title {
+  font-size: 38px;
+  font-family: 'ClashGrotesk-Semibold';
+  text-align: center;
+  margin: 20px 0px 50px 0px;
+}
+
+.section-fun-facts .fun-fact-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.section-fun-facts .fun-fact-wrapper .fun-fact-card {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 20px;
+}
+
+.section-fun-facts .fun-fact-card .image-wrapper {
+  height: 65px;
+  width: 65px;
+}
+
+.section-fun-facts .fun-fact-card .fact-number {
+  font-size: 48px;
+  font-family: 'ClashGrotesk-Semibold';
+}
+
+.section-fun-facts .fun-fact-card .fact-text {
+  font-size: 19px;
+  font-family: 'ClashGrotesk-Medium';
+  color: var(--color-grey);
+}
+
+/* Section 5 - Testimonial */
+.section-testi .container {
+  padding: 100px 0px;
+}
+
+.section-testi .section-title {
+  font-size: 80px;
+  font-family: 'ClashGrotesk-Semibold';
+  text-align: center;
+}
+
+.section-testi .testi-swiper-wrapper {
+  margin-top: 80px;
+  padding-bottom: 25px;
+}
+
+.section-testi .testi-swiper-wrapper .swiper-wrapper {
+  padding-bottom: 25px;
+}
+
+.section-testi .testi-swiper-wrapper .testi-card {
+  min-height: 320px;
+  width: 366px !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 35px 46px 30px;
+  opacity: 0.2;
+  transform: opacity 1s ease;
+}
+
+.section-testi .testi-swiper-wrapper .testi-card.swiper-slide-active {
+  opacity: 1;
+}
+
+.section-testi .testi-card .testi-box {
+  min-height: 320px;
+  align-content: space-between;
+}
+
+.section-testi .testi-card .testi-star {
+  margin-bottom: 20px;
+}
+
+.section-testi .testi-card .testi-star-icon {
+  fill: #fee600;
+  stroke: transparent;
+}
+
+.section-testi .testi-card .testi-text {
+  font-size: 20px;
+  font-family: 'ClashGrotesk-Medium';
+}
+
+.section-testi .testi-card .testi-person {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.section-testi .testi-card .testi-person--name {
+  font-family: 'ClashGrotesk-Semibold';
+}
+
+.section-testi .testi-card .testi-person--position {
+  font-family: 'ClashGrotesk-Medium';
+}
+
+.section-testi .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(34, 34, 34, 0.4);
+}
+
+.section-testi .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #222;
+}
+
+/* Responsive */
+/* Mobile Potrait */
+@media screen and (max-width: 767px) {
+  /* Global */
+  .max-w-1200,
+  .section-our-client .container,
+  .section-our-services .container,
+  .section-fun-facts .container,
+  .section-connect .container {
+    width: 90%;
+    max-width: 90% !important;
+  }
+
+  .section-our-client .container,
+  .section-testi .container,
+  .section-our-services .container,
+  .section-fun-facts .container,
+  .section-connect {
+    padding: 50px 0px;
+  }
+
+  .mega-menu-wrapper .container .mega-menu-item,
+  .section-our-services .container .section-title,
+  .section-connect .section-title {
+    font-size: 50px;
+  }
+
+  /* Header */
+  .section-banner .section-title {
+    font-size: 65px;
+  }
+
+  /* Our Client */
+  .section-our-client .client-logo-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonial */
+  .section-testi .section-title {
+    font-size: 38px;
+  }
+
+  .section-testi .testi-swiper-wrapper {
+    margin-top: 50px;
+  }
+
+  .section-testi .testi-swiper-wrapper .testi-card {
+    width: 80% !important;
+    padding: 25px;
+  }
+
+  /* Our Services */
+  .section-our-services .container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-our-services .container .col-left {
+    padding: 0px;
+  }
+
+  .section-our-services .services-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .section-our-services .container .col-right {
+    display: none;
+  }
+
+  /* Fun Fact */
+  .section-fun-facts .fun-fact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet Potrait */
+@media screen and (max-width: 980px) and (min-width: 768px) {
+  .max-w-1200,
+  .section-our-client .container {
+    width: 90%;
+    max-width: 90% !important;
+  }
+
+  .section-banner .section-title {
+    font-size: 120px;
+  }
+
+  .section-banner .subtitle-top {
+    font-size: 20px;
+  }
+
+  .section-our-services .container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-testi .testi-swiper-wrapper .testi-card {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .section-banner .container {
+    width: 90%;
+  }
+
+  .section-our-services .container {
+    grid-template-columns: 1fr;
+  }
+}

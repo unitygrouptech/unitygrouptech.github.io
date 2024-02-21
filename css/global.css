@@ -395,6 +395,10 @@ a {
   max-width: 1170px;
 }
 
+.w-600px {
+  width: 600px;
+}
+
 .w-100 {
   width: 100%;
 }

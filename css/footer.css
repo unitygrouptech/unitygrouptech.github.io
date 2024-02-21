@@ -96,3 +96,28 @@ a:hover .button-line-absolute {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+/* Responsive */
+/* Mobile Potrait */
+@media screen and (max-width: 767px) {
+  .section-footer .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+
+  .section-footer .container .col-left {
+    gap: 50px;
+  }
+
+  .section-footer .footer-social .social-wrapper {
+    justify-content: center;
+  }
+
+  .section-footer .container .col-center {
+    display: none;
+  }
+}
+/* Tablet Potrait */
+@media screen and (max-width: 980px) and (min-width: 768px) {
+}
